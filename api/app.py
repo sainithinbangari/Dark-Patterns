@@ -2,7 +2,7 @@ from flask import Flask,jsonify,request
 from flask_cors import CORS
 from joblib import load
 
-presence_classifier = load('presence_classifer.joblib')
+presence_classifier = load('Dark-Patterns/api/presence_classifer.joblib')
 presence_vect = load('presence_vectorizer.joblib')
 category_classifier = load('category_classifier.joblib')
 category_vect = load('category_vectorizer.joblib')
